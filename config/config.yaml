@@ -1,0 +1,23 @@
+# Cockpit settings
+app.name: "weenoapi"
+database:
+  server: 'mongodb://localhost:27017'
+  options:
+        db: 'cockpitdb'
+debug: true
+groups:
+  user:
+    admin: false
+account:
+  fields:
+    avatar:
+      type: "image"
+      label: "Avatar"
+      name: "avatar"
+    gendar:
+      type: "select"
+      name: "gendar"
+      options:
+        options: "Homme, Femme"
+        default: ""
+      label: "Genre"
